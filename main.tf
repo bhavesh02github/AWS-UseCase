@@ -11,7 +11,7 @@ provider "aws" {
 
 # Define the S3 bucket
 resource "aws_s3_bucket" "my_terraform_bucket" {
-  bucket = "himbhavchappidi2025" # IMPORTANT: Replace with a globally unique name!
+  bucket = "bhavuma@2025" # IMPORTANT: Replace with a globally unique name!
   # acl    = "private" # Removed deprecated acl argument
 
   tags = {
