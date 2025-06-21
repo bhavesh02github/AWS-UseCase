@@ -2,7 +2,7 @@ terraform{
   backend "s3" {
     bucket = "bhavesh-bucket-2025"
     key = "backend"
-    region = "us-west-2"
+    region = "ap-south-1"
   }
 }
 provider "aws" {
