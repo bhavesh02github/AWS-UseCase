@@ -1,6 +1,6 @@
 terraform{
   backend "s3" {
-    bucket = "bhavesh-bucket-2025"
+    bucket = "terraformawsusecase"
     key = "backend"
     region = "us-west-2"
   }
