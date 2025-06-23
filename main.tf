@@ -6,7 +6,7 @@ terraform{
   }
 }
 provider "aws" {
-  region = "us-west-2" # You can change this to your desired AWS region
+  region = "us-west-2" 
 }
 
 # Define the S3 bucket
