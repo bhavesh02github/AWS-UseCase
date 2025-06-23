@@ -3,87 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Engineer - AWS Specialist</title>
+    <title>DevOps via AWS Engineer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .hero {
-            background-image: url('https://via.placeholder.com/1500x500');
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 3em;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
         }
         .container {
-            padding: 20px;
+            max-width: 1200px;
         }
-        .bio, .skills, .contact {
-            margin-bottom: 40px;
+        /* Custom styles for gradient background and shadow for key sections */
+        .gradient-background {
+            background: linear-gradient(to right, #1a202c, #2d3748); /* Dark blue-gray gradient */
         }
-        .skills img {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
+        .section-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+            transition: transform 0.2s ease-in-out;
         }
-        .contact form {
-            display: flex;
-            flex-direction: column;
+        .section-card:hover {
+            transform: translateY(-5px);
         }
-        .contact form input, .contact form textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            font-size: 1em;
-        }
-        .contact form button {
-            padding: 10px;
-            font-size: 1em;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            cursor: pointer;
+        .icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
         }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <h1>DevOps Engineer - AWS Specialist</h1>
-    </div>
-    <div class="container">
-        <div class="bio">
-            <h2>About Me</h2>
-            <p>Hello! I am a DevOps Engineer specializing in AWS. With years of experience in cloud infrastructure, automation, and continuous integration, I help organizations streamline their operations and achieve their goals efficiently.</p>
+
+    <!-- Header Section -->
+    <header class="gradient-background text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-teal-300">AWS DevOps Engineer</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-teal-300 transition duration-300">About</a></li>
+                    <li><a href="#skills" class="hover:text-teal-300 transition duration-300">Skills</a></li>
+                    <li><a href="#experience" class="hover:text-teal-300 transition duration-300">Experience</a></li>
+                    <li><a href="#contact" class="hover:text-teal-300 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="skills">
-            <h2>Skills</h2>
-            <div>
-                https://via.placeholder.com/50?text=AWS
-                <img src="https://via.placeholder.com/50?text=Docker"      <img src="https://via.placeholder.com/s
-                https://via.placeholder.com/50?text=Terraform
-                <img src="https://older.com/50?text=CI/CD
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-100 py-20 md:py-32 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl md:text-6xl font-extrabold text-gray-800 leading-tight mb-6">
+                Transforming Infrastructure with <span class="text-blue-600">Cloud-Native Solutions</span> on AWS
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+                Leveraging Amazon Web Services to build scalable, reliable, and automated
+                DevOps pipelines and infrastructure.
+            </p>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-gray-800 text-center mb-12">About Me</h3>
+            <div class="section-card p-8 md:p-12 max-w-4xl mx-auto text-lg leading-relaxed text-gray-700">
+                <p class="mb-4">
+                    As a dedicated DevOps Engineer with a strong focus on Amazon Web Services (AWS), I specialize in streamlining software development lifecycles and ensuring high-availability cloud infrastructure. My expertise lies in designing, implementing, and managing robust CI/CD pipelines, automating infrastructure provisioning, and optimizing cloud resource utilization.
+                </p>
+                <p class="mb-4">
+                    I thrive on bridging the gap between development and operations, fostering a culture of collaboration and continuous improvement. My goal is to empower teams to deliver high-quality software faster and more efficiently, leveraging the full power of AWS cloud services.
+                </p>
+                <p>
+                    I am passionate about embracing new technologies, solving complex challenges, and building resilient systems that drive business success.
+                </p>
             </div>
         </div>
-        <div class="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-gray-800 text-center mb-12">My Expertise</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Skill Card 1: Cloud Platforms -->
+                <div class="section-card p-6 flex flex-col items-center text-center">
+                    <!-- Inline SVG for Cloud Icon -->
+                    <svg class="icon text-blue-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud">
+                        <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+                    </svg>
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-3">Cloud Platforms</h4>
+                    <ul class="text-gray-700 text-left w-full list-disc list-inside space-y-1">
+                        <li>AWS (EC2, S3, Lambda, VPC, RDS, IAM, ECS, EKS)</li>
+                        <li>Cloud Architecture Design</li>
+                        <li>Hybrid Cloud Solutions</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card 2: CI/CD & Automation -->
+                <div class="section-card p-6 flex flex-col items-center text-center">
+                    <!-- Inline SVG for Gear Icon -->
+                    <svg class="icon text-green-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cog">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0-.33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82-.33V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09A1.65 1.65 0 0 0 15 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0 .33 1.82H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z"/>
+                    </svg>
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-3">CI/CD & Automation</h4>
+                    <ul class="text-gray-700 text-left w-full list-disc list-inside space-y-1">
+                        <li>Jenkins, GitLab CI, AWS CodePipeline</li>
+                        <li>Infrastructure as Code (CloudFormation, Terraform)</li>
+                        <li>Ansible, Chef, Puppet</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card 3: Containerization & Orchestration -->
+                <div class="section-card p-6 flex flex-col items-center text-center">
+                    <!-- Inline SVG for Box Icon -->
+                    <svg class="icon text-purple-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-box">
+                        <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/>
+                        <path d="m3.3 7 8.7 5 8.7-5"/>
+                        <path d="M12 22V12"/>
+                    </svg>
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-3">Containerization & Orchestration</h4>
+                    <ul class="text-gray-700 text-left w-full list-disc list-inside space-y-1">
+                        <li>Docker</li>
+                        <li>Kubernetes (EKS)</li>
+                        <li>Container Best Practices</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card 4: Monitoring & Logging -->
+                <div class="section-card p-6 flex flex-col items-center text-center">
+                    <!-- Inline SVG for Activity Icon -->
+                    <svg class="icon text-red-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-3">Monitoring & Logging</h4>
+                    <ul class="text-gray-700 text-left w-full list-disc list-inside space-y-1">
+                        <li>AWS CloudWatch, CloudTrail</li>
+                        <li>Prometheus, Grafana</li>
+                        <li>ELK Stack (Elasticsearch, Logstash, Kibana)</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card 5: Scripting & Languages -->
+                <div class="section-card p-6 flex flex-col items-center text-center">
+                    <!-- Inline SVG for Code Icon -->
+                    <svg class="icon text-yellow-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code">
+                        <polyline points="16 18 22 12 16 6"/>
+                        <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-3">Scripting & Languages</h4>
+                    <ul class="text-gray-700 text-left w-full list-disc list-inside space-y-1">
+                        <li>Python</li>
+                        <li>Bash Scripting</li>
+                        <li>Go, JavaScript (basic)</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card 6: Security & Compliance -->
+                <div class="section-card p-6 flex flex-col items-center text-center">
+                    <!-- Inline SVG for Shield Icon -->
+                    <svg class="icon text-orange-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/>
+                    </svg>
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-3">Security & Compliance</h4>
+                    <ul class="text-gray-700 text-left w-full list-disc list-inside space-y-1">
+                        <li>IAM Best Practices</li>
+                        <li>Security Group & NACL Management</li>
+                        <li>Compliance Standards (e.g., CIS Benchmarks)</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Experience/Projects Section (Simplified for a static page) -->
+    <section id="experience" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-gray-800 text-center mb-12">Key Projects & Experience</h3>
+            <div class="section-card p-8 md:p-12 max-w-4xl mx-auto text-lg leading-relaxed text-gray-700">
+                <div class="mb-6">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-2">Automated CI/CD Pipeline for Microservices</h4>
+                    <p class="text-gray-600 mb-2">
+                        Designed and implemented end-to-end CI/CD pipelines using AWS CodePipeline, CodeBuild, and CodeDeploy
+                        for a microservices architecture deployed on Amazon EKS. Reduced deployment time by 60%.
+                    </p>
+                    <ul class="flex flex-wrap gap-2 text-sm">
+                        <li class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">AWS CodePipeline</li>
+                        <li class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">EKS</li>
+                        <li class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Docker</li>
+                        <li class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Terraform</li>
+                    </ul>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-2">Infrastructure as Code (IaC) Transformation</h4>
+                    <p class="text-gray-600 mb-2">
+                        Migrated existing manual infrastructure provisioning to a fully automated IaC model using Terraform and AWS CloudFormation.
+                        Ensured environment consistency and disaster recovery capabilities.
+                    </p>
+                    <ul class="flex flex-wrap gap-2 text-sm">
+                        <li class="bg-green-100 text-green-800 px-3 py-1 rounded-full">Terraform</li>
+                        <li class="bg-green-100 text-green-800 px-3 py-1 rounded-full">CloudFormation</li>
+                        <li class="bg-green-100 text-green-800 px-3 py-1 rounded-full">Python</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-2">Cost Optimization & Performance Tuning</h4>
+                    <p class="text-gray-600 mb-2">
+                        Implemented AWS cost optimization strategies, including right-sizing EC2 instances, optimizing S3 storage, and leveraging Reserved Instances/Savings Plans,
+                        resulting in a 20% reduction in monthly AWS spend. Improved application performance by 15% through infrastructure tuning.
+                    </p>
+                    <ul class="flex flex-wrap gap-2 text-sm">
+                        <li class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">AWS Cost Explorer</li>
+                        <li class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">CloudWatch</li>
+                        <li class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">Performance Tuning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 gradient-background text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold text-white mb-8">Let's Connect!</h3>
+            <p class="text-xl max-w-2xl mx-auto mb-10">
+                Interested in collaborating or learning more about my work? Feel free to reach out.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <a href="mailto:your.email@example.com" class="bg-white text-blue-600 hover:bg-gray-200 font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
+                    Email Me
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="bg-white text-blue-600 hover:bg-gray-200 font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank" class="bg-white text-blue-600 hover:bg-gray-200 font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-400 py-8 text-center text-sm">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 DevOps via AWS Engineer. All rights reserved.</p>
+            <p class="mt-2">Built with ❤️ and Tailwind CSS.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
