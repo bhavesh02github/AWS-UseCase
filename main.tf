@@ -6,7 +6,7 @@ terraform{
   }
 }
 provider "aws" {
-  region = "us-west-2" 
+  region = "us-west-2" # You can change this to your desired AWS region
 }
 
 # Define the S3 bucket
@@ -32,6 +32,23 @@ resource "aws_s3_bucket_public_access_block" "public_access" {
   block_public_policy = false
   ignore_public_acls = false
   restrict_public_buckets = false
+}
+
+resource "aws_s3_bucket_policy" "public_read_policy" {
+  bucket = aws_s3_bucket.my_terraform_bucket.id
+
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Sid       = "PublicReadGetObject",
+        Effect    = "Allow",
+        Principal = "*",
+        Action    = "s3:*",
+        Resource  = "${aws_s3_bucket.my_terraform_bucket.arn}/*"
+      }
+    ]
+  })
 }
 
 resource "aws_s3_object" "index_html" {
@@ -146,4 +163,3 @@ resource "aws_iam_role_policy" "codepipeline_policy" {
     ]
   })
 }
-
