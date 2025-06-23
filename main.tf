@@ -146,3 +146,7 @@ resource "aws_iam_role_policy" "codepipeline_policy" {
     ]
   })
 }
+
+output "website_endpoint" {
+  value = aws_s3_bucket.my_terraform_bucket.id.website_endpoint
+}
