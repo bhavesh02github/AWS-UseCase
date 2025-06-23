@@ -6,13 +6,12 @@ terraform{
   }
 }
 provider "aws" {
-  region = "us-west-2" # You can change this to your desired AWS region
+  region = "us-west-2" 
 }
 
 # Define the S3 bucket
 resource "aws_s3_bucket" "my_terraform_bucket" {
-  bucket = "bhavuma2025" # IMPORTANT: Replace with a globally unique name!
-  # acl    = "public-read" # Removed deprecated acl argument
+  bucket = "bhavuma2025" 
 
   website {
     index_document = "index.html"
@@ -54,7 +53,7 @@ resource "aws_s3_bucket_policy" "public_read_policy" {
 resource "aws_s3_object" "index_html" {
   bucket = aws_s3_bucket.my_terraform_bucket.id
   key = "index.html"
-  source = "${path.module}/index.html" # Assumes index.html is in the same folder as your .tf files
+  source = "${path.module}/index.html" 
   content_type = "text/html"
 }
 
