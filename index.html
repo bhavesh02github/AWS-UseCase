@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps via AWS Engineer</title>
+    <title>DevOps via AWS Engineer - Expertise in Cloud Infrastructure</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; 
-            color: #374151; 
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
         }
         .container {
             max-width: 1200px;
         }
+        /* Custom styles for gradient background and shadow for key sections */
         .gradient-background {
-            background: linear-gradient(to right, #1a202c, #2d3748); 
+            background: linear-gradient(to right, #1a202c, #2d3748); /* Dark blue-gray gradient */
         }
         .section-card {
             background-color: #ffffff;
-            border-radius: 0.75rem; 
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
             transition: transform 0.2s ease-in-out;
         }
         .section-card:hover {
@@ -34,6 +37,19 @@
             display: inline-block;
             vertical-align: middle;
             margin-right: 8px;
+        }
+        /* Loading spinner */
+        .loader {
+            border: 4px solid #f3f3f3; /* Light grey */
+            border-top: 4px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
@@ -48,6 +64,9 @@
                     <li><a href="#about" class="hover:text-teal-300 transition duration-300">About</a></li>
                     <li><a href="#skills" class="hover:text-teal-300 transition duration-300">Skills</a></li>
                     <li><a href="#experience" class="hover:text-teal-300 transition duration-300">Experience</a></li>
+                    <li><a href="#project-ideas" class="hover:text-teal-300 transition duration-300">Project Ideas</a></li>
+                    <li><a href="#aws-service-explainer" class="hover:text-teal-300 transition duration-300">AWS Explainer</a></li>
+                    <li><a href="#devops-advisor" class="hover:text-teal-300 transition duration-300">DevOps Advisor</a></li>
                     <li><a href="#contact" class="hover:text-teal-300 transition duration-300">Contact</a></li>
                 </ul>
             </nav>
@@ -108,7 +127,9 @@
                     </ul>
                 </div>
 
+                <!-- Skill Card 2: CI/CD & Automation -->
                 <div class="section-card p-6 flex flex-col items-center text-center">
+                    <!-- Inline SVG for Gear Icon -->
                     <svg class="icon text-green-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cog">
                         <circle cx="12" cy="12" r="3"/>
                         <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0-.33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82-.33V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09A1.65 1.65 0 0 0 15 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0 .33 1.82H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z"/>
@@ -117,11 +138,13 @@
                     <ul class="text-gray-700 text-left w-full list-disc list-inside space-y-1">
                         <li>Jenkins, GitLab CI, AWS CodePipeline</li>
                         <li>Infrastructure as Code (CloudFormation, Terraform)</li>
-                        <li>Ansible</li>
+                        <li>Ansible, Chef, Puppet</li>
                     </ul>
                 </div>
 
+                <!-- Skill Card 3: Containerization & Orchestration -->
                 <div class="section-card p-6 flex flex-col items-center text-center">
+                    <!-- Inline SVG for Box Icon -->
                     <svg class="icon text-purple-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-box">
                         <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/>
                         <path d="m3.3 7 8.7 5 8.7-5"/>
@@ -135,18 +158,23 @@
                     </ul>
                 </div>
 
+                <!-- Skill Card 4: Monitoring & Logging -->
                 <div class="section-card p-6 flex flex-col items-center text-center">
+                    <!-- Inline SVG for Activity Icon -->
                     <svg class="icon text-red-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity">
                         <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
                     </svg>
                     <h4 class="text-2xl font-semibold text-gray-800 mb-3">Monitoring & Logging</h4>
                     <ul class="text-gray-700 text-left w-full list-disc list-inside space-y-1">
                         <li>AWS CloudWatch, CloudTrail</li>
-                        <li>Splunk</li>
+                        <li>Prometheus, Grafana</li>
+                        <li>ELK Stack (Elasticsearch, Logstash, Kibana)</li>
                     </ul>
                 </div>
 
+                <!-- Skill Card 5: Scripting & Languages -->
                 <div class="section-card p-6 flex flex-col items-center text-center">
+                    <!-- Inline SVG for Code Icon -->
                     <svg class="icon text-yellow-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code">
                         <polyline points="16 18 22 12 16 6"/>
                         <polyline points="8 6 2 12 8 18"/>
@@ -155,10 +183,13 @@
                     <ul class="text-gray-700 text-left w-full list-disc list-inside space-y-1">
                         <li>Python</li>
                         <li>Bash Scripting</li>
+                        <li>Go, JavaScript (basic)</li>
                     </ul>
                 </div>
 
+                <!-- Skill Card 6: Security & Compliance -->
                 <div class="section-card p-6 flex flex-col items-center text-center">
+                    <!-- Inline SVG for Shield Icon -->
                     <svg class="icon text-orange-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield">
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/>
                     </svg>
@@ -166,7 +197,7 @@
                     <ul class="text-gray-700 text-left w-full list-disc list-inside space-y-1">
                         <li>IAM Best Practices</li>
                         <li>Security Group & NACL Management</li>
-                        <li>Compliance Standards</li>
+                        <li>Compliance Standards (e.g., CIS Benchmarks)</li>
                     </ul>
                 </div>
 
@@ -180,32 +211,108 @@
             <h3 class="text-4xl font-bold text-gray-800 text-center mb-12">Key Projects & Experience</h3>
             <div class="section-card p-8 md:p-12 max-w-4xl mx-auto text-lg leading-relaxed text-gray-700">
                 <div class="mb-6">
-                    <h4 class="text-2xl font-semibold text-gray-800 mb-2">Automating Static Website Deployment with 
-                        AWS S3 and CI/CD Services
-                    </h4>
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-2">Automated CI/CD Pipeline for Microservices</h4>
                     <p class="text-gray-600 mb-2">
-                        Automating the deployment of a static website using AWS S3 for hosting 
-                        and AWS CodeBuild and CodePipeline for Continuous Integration/Continuous Deployment (CI/CD).
+                        Designed and implemented end-to-end CI/CD pipelines using AWS CodePipeline, CodeBuild, and CodeDeploy
+                        for a microservices architecture deployed on Amazon EKS. Reduced deployment time by 60%.
                     </p>
                     <ul class="flex flex-wrap gap-2 text-sm">
                         <li class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">AWS CodePipeline</li>
-                        <li class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">AWS CodeBuild</li>
+                        <li class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">EKS</li>
+                        <li class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Docker</li>
                         <li class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Terraform</li>
                     </ul>
                 </div>
                 <div class="mb-6">
-                    <h4 class="text-2xl font-semibold text-gray-800 mb-2">Provision an EC2 Instance on AWS</h4>
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-2">Infrastructure as Code (IaC) Transformation</h4>
                     <p class="text-gray-600 mb-2">
-                        Setting up the AWS provider in Terraform allows you to provision cloud resources 
-                        like an aws_instance, while configuring a key pair and security group ensures 
-                        secure access and controlled network traffic to your EC2 instance.
+                        Migrated existing manual infrastructure provisioning to a fully automated IaC model using Terraform and AWS CloudFormation.
+                        Ensured environment consistency and disaster recovery capabilities.
                     </p>
                     <ul class="flex flex-wrap gap-2 text-sm">
                         <li class="bg-green-100 text-green-800 px-3 py-1 rounded-full">Terraform</li>
                         <li class="bg-green-100 text-green-800 px-3 py-1 rounded-full">CloudFormation</li>
+                        <li class="bg-green-100 text-green-800 px-3 py-1 rounded-full">Python</li>
                     </ul>
                 </div>
-                
+                <div>
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-2">Cost Optimization & Performance Tuning</h4>
+                    <p class="text-gray-600 mb-2">
+                        Implemented AWS cost optimization strategies, including right-sizing EC2 instances, optimizing S3 storage, and leveraging Reserved Instances/Savings Plans,
+                        resulting in a 20% reduction in monthly AWS spend. Improved application performance by 15% through infrastructure tuning.
+                    </p>
+                    <ul class="flex flex-wrap gap-2 text-sm">
+                        <li class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">AWS Cost Explorer</li>
+                        <li class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">CloudWatch</li>
+                        <li class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">Performance Tuning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Idea Generator Section -->
+    <section id="project-ideas" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold text-gray-800 mb-8">Generate DevOps Project Ideas ✨</h3>
+            <p class="text-xl max-w-2xl mx-auto mb-10 text-gray-700">
+                Need inspiration for your next DevOps project? Click the button below to get an AI-generated idea focusing on AWS services and modern DevOps practices!
+            </p>
+            <button id="generateProjectIdeaBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg flex items-center justify-center mx-auto">
+                <span id="projectIdeaButtonText">Get a New Idea ✨</span>
+                <div id="projectIdeaLoadingSpinner" class="loader ml-3 hidden"></div>
+            </button>
+            <div id="projectIdeaOutput" class="section-card p-8 md:p-12 max-w-4xl mx-auto mt-12 text-lg text-gray-700 text-left hidden">
+                <!-- Project idea will be displayed here -->
+            </div>
+            <div id="projectIdeaErrorMessage" class="text-red-600 mt-4 hidden">
+                Oops! Something went wrong generating the project idea. Please try again later.
+            </div>
+        </div>
+    </section>
+
+    <!-- AWS Service Explainer Section -->
+    <section id="aws-service-explainer" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold text-gray-800 mb-8">AWS Service Explainer ✨</h3>
+            <p class="text-xl max-w-2xl mx-auto mb-10 text-gray-700">
+                Want to know more about a specific AWS service? Type its name below and get a concise explanation!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
+                <input type="text" id="awsServiceInput" placeholder="e.g., AWS Lambda, S3, EKS" class="flex-grow max-w-md p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-gray-800">
+                <button id="explainServiceBtn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg flex items-center justify-center">
+                    <span id="explainServiceButtonText">Explain Service ✨</span>
+                    <div id="explainServiceLoadingSpinner" class="loader ml-3 hidden"></div>
+                </button>
+            </div>
+            <div id="serviceExplanationOutput" class="section-card p-8 md:p-12 max-w-4xl mx-auto mt-12 text-lg text-gray-700 text-left hidden">
+                <!-- Service explanation will be displayed here -->
+            </div>
+            <div id="explainServiceErrorMessage" class="text-red-600 mt-4 hidden">
+                Oops! Something went wrong explaining the service. Please check the service name or try again later.
+            </div>
+        </div>
+    </section>
+
+    <!-- DevOps Best Practice Advisor Section -->
+    <section id="devops-advisor" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold text-gray-800 mb-8">DevOps Best Practice Advisor ✨</h3>
+            <p class="text-xl max-w-2xl mx-auto mb-10 text-gray-700">
+                Describe a DevOps challenge or scenario, and get tailored best practices and AWS service recommendations!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
+                <input type="text" id="devopsScenarioInput" placeholder="e.g., 'slow deployments', 'improving monitoring', 'security best practices'" class="flex-grow max-w-md p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-gray-800">
+                <button id="getBestPracticeBtn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg flex items-center justify-center">
+                    <span id="bestPracticeButtonText">Get Advice ✨</span>
+                    <div id="bestPracticeLoadingSpinner" class="loader ml-3 hidden"></div>
+                </button>
+            </div>
+            <div id="bestPracticeOutput" class="section-card p-8 md:p-12 max-w-4xl mx-auto mt-12 text-lg text-gray-700 text-left hidden">
+                <!-- Best practice advice will be displayed here -->
+            </div>
+            <div id="bestPracticeErrorMessage" class="text-red-600 mt-4 hidden">
+                Oops! Something went wrong getting advice. Please try again later.
             </div>
         </div>
     </section>
@@ -218,13 +325,13 @@
                 Interested in collaborating or learning more about my work? Feel free to reach out.
             </p>
             <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-                <a href="mailto:vanaparthyb321@gmail.com" class="bg-white text-blue-600 hover:bg-gray-200 font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
+                <a href="mailto:your.email@example.com" class="bg-white text-blue-600 hover:bg-gray-200 font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
                     Email Me
                 </a>
-                <a href="https://www.linkedin.com/in/bhavesh-vanaparthy-8333b3254/" target="_blank" class="bg-white text-blue-600 hover:bg-gray-200 font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="bg-white text-blue-600 hover:bg-gray-200 font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
                     LinkedIn
                 </a>
-                <a href="https://github.com/bhavesh02github" target="_blank" class="bg-white text-blue-600 hover:bg-gray-200 font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
+                <a href="https://github.com/yourprofile" target="_blank" class="bg-white text-blue-600 hover:bg-gray-200 font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
                     GitHub
                 </a>
             </div>
@@ -235,8 +342,235 @@
     <footer class="bg-gray-800 text-gray-400 py-8 text-center text-sm">
         <div class="container mx-auto px-4">
             <p>&copy; 2025 DevOps via AWS Engineer. All rights reserved.</p>
+            <p class="mt-2">Built with ❤️ and Tailwind CSS.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const generateProjectIdeaBtn = document.getElementById('generateProjectIdeaBtn');
+            const projectIdeaOutput = document.getElementById('projectIdeaOutput');
+            const projectIdeaLoadingSpinner = document.getElementById('projectIdeaLoadingSpinner');
+            const projectIdeaButtonText = document.getElementById('projectIdeaButtonText');
+            const projectIdeaErrorMessage = document.getElementById('projectIdeaErrorMessage');
+
+            const awsServiceInput = document.getElementById('awsServiceInput');
+            const explainServiceBtn = document.getElementById('explainServiceBtn');
+            const serviceExplanationOutput = document.getElementById('serviceExplanationOutput');
+            const explainServiceLoadingSpinner = document.getElementById('explainServiceLoadingSpinner');
+            const explainServiceButtonText = document.getElementById('explainServiceButtonText');
+            const explainServiceErrorMessage = document.getElementById('explainServiceErrorMessage');
+
+            const devopsScenarioInput = document.getElementById('devopsScenarioInput');
+            const getBestPracticeBtn = document.getElementById('getBestPracticeBtn');
+            const bestPracticeOutput = document.getElementById('bestPracticeOutput');
+            const bestPracticeLoadingSpinner = document.getElementById('bestPracticeLoadingSpinner');
+            const bestPracticeButtonText = document.getElementById('bestPracticeButtonText');
+            const bestPracticeErrorMessage = document.getElementById('bestPracticeErrorMessage');
+
+
+            // Function to format text from LLM output for display
+            function formatLLMOutput(text) {
+                // Convert markdown bolding to HTML strong tags
+                let formattedText = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+                // Convert markdown list items to HTML list
+                // This regex specifically targets lines starting with '-' and wraps them in <li>
+                // It also handles nested lists by checking indentation (simple for this case)
+                formattedText = formattedText.split('\n').map(line => {
+                    if (line.trim().startsWith('- ')) {
+                        const indent = line.match(/^\s*/)[0].length;
+                        const content = line.trim().substring(2);
+                        return `<li style="margin-left: ${indent * 10}px;">${content}</li>`;
+                    }
+                    return line;
+                }).join('\n');
+
+                // Wrap remaining non-list lines in paragraphs
+                formattedText = formattedText.split('\n').map(line => {
+                    if (line.trim() !== '' && !line.trim().startsWith('<li')) {
+                        return `<p class="mb-2">${line}</p>`; // Add margin-bottom for paragraphs
+                    }
+                    return line;
+                }).join('\n');
+
+                // If the entire output looks like a list, wrap in <ul>
+                if (formattedText.trim().startsWith('<li')) {
+                    formattedText = `<ul>${formattedText}</ul>`;
+                }
+                return formattedText;
+            }
+
+
+            // Project Idea Generator Logic
+            if (generateProjectIdeaBtn) {
+                generateProjectIdeaBtn.addEventListener('click', async () => {
+                    // Show loading state
+                    projectIdeaButtonText.classList.add('hidden');
+                    projectIdeaLoadingSpinner.classList.remove('hidden');
+                    projectIdeaOutput.classList.add('hidden');
+                    projectIdeaErrorMessage.classList.add('hidden');
+                    projectIdeaOutput.innerHTML = ''; // Clear previous content
+
+                    const prompt = "Generate a single, innovative DevOps project idea that heavily utilizes Amazon Web Services (AWS). The idea should involve multiple AWS services and address a common challenge in software delivery or infrastructure management. Provide a brief description of the project and list 3-5 key AWS services it would leverage. Format the output as a structured text that can be directly displayed on an HTML page, using basic Markdown like bolding and lists if suitable for readability.";
+
+                    // Gemini API call
+                    try {
+                        let chatHistory = [];
+                        chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+                        const payload = { contents: chatHistory };
+                        const apiKey = ""; // Canvas will provide this at runtime
+                        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        const result = await response.json();
+
+                        if (result.candidates && result.candidates.length > 0 &&
+                            result.candidates[0].content && result.candidates[0].content.parts &&
+                            result.candidates[0].content.parts.length > 0) {
+                            const text = result.candidates[0].content.parts[0].text;
+                            projectIdeaOutput.innerHTML = formatLLMOutput(text);
+                            projectIdeaOutput.classList.remove('hidden');
+                        } else {
+                            projectIdeaErrorMessage.classList.remove('hidden');
+                            console.error("Gemini API returned an unexpected response structure for project idea:", result);
+                        }
+                    } catch (error) {
+                        projectIdeaErrorMessage.classList.remove('hidden');
+                        console.error("Error calling Gemini API for project idea:", error);
+                    } finally {
+                        // Hide loading state
+                        projectIdeaButtonText.classList.remove('hidden');
+                        projectIdeaLoadingSpinner.classList.add('hidden');
+                    }
+                });
+            }
+
+            // AWS Service Explainer Logic
+            if (explainServiceBtn) {
+                explainServiceBtn.addEventListener('click', async () => {
+                    const serviceName = awsServiceInput.value.trim();
+                    if (!serviceName) {
+                        explainServiceErrorMessage.textContent = "Please enter an AWS service name.";
+                        explainServiceErrorMessage.classList.remove('hidden');
+                        return;
+                    }
+
+                    // Show loading state
+                    explainServiceButtonText.classList.add('hidden');
+                    explainServiceLoadingSpinner.classList.remove('hidden');
+                    serviceExplanationOutput.classList.add('hidden');
+                    explainServiceErrorMessage.classList.add('hidden');
+                    serviceExplanationOutput.innerHTML = ''; // Clear previous content
+
+                    const prompt = `Explain the AWS service "${serviceName}" from a DevOps perspective. Describe its primary function, how it typically fits into a CI/CD pipeline or infrastructure management, and provide a brief example use case. Keep the explanation concise and focused on practical DevOps applications.`;
+
+                    // Gemini API call
+                    try {
+                        let chatHistory = [];
+                        chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+                        const payload = { contents: chatHistory };
+                        const apiKey = ""; // Canvas will provide this at runtime
+                        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        const result = await response.json();
+
+                        if (result.candidates && result.candidates.length > 0 &&
+                            result.candidates[0].content && result.candidates[0].content.parts &&
+                            result.candidates[0].content.parts.length > 0) {
+                            const text = result.candidates[0].content.parts[0].text;
+                            serviceExplanationOutput.innerHTML = formatLLMOutput(text);
+                            serviceExplanationOutput.classList.remove('hidden');
+                        } else {
+                            explainServiceErrorMessage.textContent = "Oops! Something went wrong explaining the service. Please try again later.";
+                            explainServiceErrorMessage.classList.remove('hidden');
+                            console.error("Gemini API returned an unexpected response structure for service explainer:", result);
+                        }
+                    } catch (error) {
+                        explainServiceErrorMessage.textContent = "Oops! Something went wrong explaining the service. Please check your network connection or try again later.";
+                        explainServiceErrorMessage.classList.remove('hidden');
+                        console.error("Error calling Gemini API for service explainer:", error);
+                    } finally {
+                        // Hide loading state
+                        explainServiceButtonText.classList.remove('hidden');
+                        explainServiceLoadingSpinner.classList.add('hidden');
+                    }
+                });
+            }
+
+            // DevOps Best Practice Advisor Logic
+            if (getBestPracticeBtn) {
+                getBestPracticeBtn.addEventListener('click', async () => {
+                    const scenario = devopsScenarioInput.value.trim();
+                    if (!scenario) {
+                        bestPracticeErrorMessage.textContent = "Please describe a DevOps challenge or scenario.";
+                        bestPracticeErrorMessage.classList.remove('hidden');
+                        return;
+                    }
+
+                    // Show loading state
+                    bestPracticeButtonText.classList.add('hidden');
+                    bestPracticeLoadingSpinner.classList.remove('hidden');
+                    bestPracticeOutput.classList.add('hidden');
+                    bestPracticeErrorMessage.classList.add('hidden');
+                    bestPracticeOutput.innerHTML = ''; // Clear previous content
+
+                    const prompt = `Given the DevOps scenario: "${scenario}", recommend 3-5 key DevOps best practices and suggest relevant AWS services that can help implement them. Keep the advice concise and practical. Format the output with bold headings for each practice and bullet points for services.`;
+
+                    // Gemini API call
+                    try {
+                        let chatHistory = [];
+                        chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+                        const payload = { contents: chatHistory };
+                        const apiKey = ""; // Canvas will provide this at runtime
+                        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        const result = await response.json();
+
+                        if (result.candidates && result.candidates.length > 0 &&
+                            result.candidates[0].content && result.candidates[0].content.parts &&
+                            result.candidates[0].content.parts.length > 0) {
+                            const text = result.candidates[0].content.parts[0].text;
+                            bestPracticeOutput.innerHTML = formatLLMOutput(text);
+                            bestPracticeOutput.classList.remove('hidden');
+                        } else {
+                            bestPracticeErrorMessage.textContent = "Oops! Something went wrong getting advice. Please try again later.";
+                            bestPracticeErrorMessage.classList.remove('hidden');
+                            console.error("Gemini API returned an unexpected response structure for DevOps advisor:", result);
+                        }
+                    } catch (error) {
+                        bestPracticeErrorMessage.textContent = "Oops! Something went wrong getting advice. Please check your network connection or try again later.";
+                        bestPracticeErrorMessage.classList.remove('hidden');
+                        console.error("Error calling Gemini API for DevOps advisor:", error);
+                    } finally {
+                        // Hide loading state
+                        bestPracticeButtonText.classList.remove('hidden');
+                        bestPracticeLoadingSpinner.classList.add('hidden');
+                    }
+                });
+            }
+        });
+    </script>
 
 </body>
 </html>
