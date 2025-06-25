@@ -9,7 +9,6 @@ provider "aws" {
   region = "us-west-2" 
 }
 
-# Define the S3 bucket
 resource "aws_s3_bucket" "my_terraform_bucket" {
   bucket = "bhavuma2025" 
 
@@ -57,7 +56,6 @@ resource "aws_s3_object" "index_html" {
   content_type = "text/html"
 }
 
-# CodeBuild Role
 resource "aws_iam_role" "codebuild_role" {
   name = "CodeBuildServiceRole"
 
@@ -93,7 +91,6 @@ resource "aws_iam_role_policy" "codebuild_policy" {
   })
 }
 
-# CodeDeploy Role
 resource "aws_iam_role" "codedeploy_role" {
   name = "CodeDeployServiceRole"
 
@@ -128,7 +125,6 @@ resource "aws_iam_role_policy" "codedeploy_policy" {
   })
 }
 
-# CodePipeline Role
 resource "aws_iam_role" "codepipeline_role" {
   name = "CodePipelineServiceRole"
 
