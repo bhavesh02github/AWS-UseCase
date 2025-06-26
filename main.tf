@@ -56,6 +56,14 @@ resource "aws_s3_object" "index_html" {
   content_type = "text/html"
 }
 
+resource "aws_s3_object" "error_html" {
+  bucket = aws_s3_bucket.my_terraform_bucket.id
+  key = "error.html"
+  source = "${path.module}/error.html" 
+  content_type = "text/html"
+}
+
+
 resource "aws_iam_role" "codebuild_role" {
   name = "CodeBuildServiceRole"
 
